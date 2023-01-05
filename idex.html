@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!--The container where I'll add the dynamic ul and li elements.-->
+    <div id="container"></div>
+    <ul id="fruit"></ul>
+  </body>
+  <script>
+    var fruitList = ["apple", "orange", "banana"];
+
+    var ul = document.getElementById("fruit");
+
+    for (let addd of fruitList) {
+      let li = document.createElement("li");
+      li.innerHTML = addd;
+
+      ul.appendChild(li);
+    }
+    console.log(li);
+  </script>
+</html>
